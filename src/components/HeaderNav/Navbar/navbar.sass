@@ -1,0 +1,72 @@
+@import '../../../assets/mixins.sass'
+    
+nav
+    position: sticky
+    top: 0
+    background: #fff
+    z-index: 999
+    box-shadow: 0 6px 13px 0px rgba(0,0,0,0.2)
+    ul 
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 55px
+        margin: 0
+        padding: 0
+        +portrait-phone()
+            display: none
+        li 
+            list-style: none
+            margin: 0
+            padding: 0 !important
+            text-align: center
+            a 
+                color: $mainColor
+                font-weight: bold
+                text-decoration: none !important
+                font-size: 22px
+                margin: 0 30px 
+                position: relative
+                width: auto
+                &::after
+                    display: block
+                    position: absolute
+                    content: ""
+                    height: 2px
+                    width: 0
+                    top: 38px
+                    background-color: $mainColor
+                    transition: width 0.3s ease-in-out
+                    left: 50%
+                    bottom: 0
+                &::before 
+                    display: block
+                    position: absolute
+                    content: ""
+                    height: 2px
+                    width: 0
+                    top: 38px
+                    background: $mainColor
+                    transition: width 0.3s ease-in-out, left 0.3s ease-in-out
+                    left: 50%
+                    bottom: 0
+                &:hover
+                    color: #01a2ff
+                &:hover::after
+                    width: 50%
+                &:hover::before
+                    width: 50%
+                    left: 0
+                +tablet() 
+                    font-size: 20px
+                    &::before
+                +landscape-phone()
+                    font-size: 15px
+                    &::after
+                        height: 2px
+
+.active 
+    color: #01a2ff
+
+
+

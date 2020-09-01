@@ -1,0 +1,13 @@
+@mixin button()
+    border: 1px solid #f01426
+    background: none
+    padding: 8px 10px
+    text-transform: uppercase
+    color: #f01426
+    font-weight: bold
+    border-radius: 5px
+    transition: 0.3s
+    &:hover
+        color: #ffffff
+        box-shadow: 0 0 8px rgba(0,0,0,0.5)
+    @content

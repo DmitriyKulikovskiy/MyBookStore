@@ -1,0 +1,59 @@
+@import '../../assets/style-mixins.sass'
+@import '../../assets/mixins.sass'
+
+.subscriber-container 
+    margin-top: 200px 
+    .subscriber-box
+        position: relative
+        .subscriber-wrapper
+            min-height: 200px
+            width: 100%
+            background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/091119-books-2019-1568225754.png')
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: cover
+            border: 2px solid $activeMain
+            position: absolute
+            top: -100px
+            .subscriber-background 
+                background: #fff
+                opacity: 0.9
+                min-height: 200px
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                .subscriber-title
+                    font-size: 32px
+                    font-weight: bold
+                    margin-bottom: 12px
+                    color: $mainColor
+                    +portrait-phone() 
+                        font-size: 24px
+                    +smallPhoneSize()
+                        font-size: 20px
+                form 
+                    input 
+                        width: 400px
+                        margin-right: 12px
+                        min-height: 45px
+                        border: 2px solid $activeMain
+                        outline: none
+                        border-radius: 8px
+                        font-size: 18px
+                        +landscape-phone() 
+                            width: 300px
+                        +portrait-phone() 
+                            width: 225px
+                        +smallPhoneSize()
+                            width: 170px
+                            
+                    button 
+                        +button()
+                            color: $mainColor
+                            border: 2px solid $activeMain
+                            &:hover
+                                color: $dimMain
+
+    

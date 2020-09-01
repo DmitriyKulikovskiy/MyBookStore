@@ -1,0 +1,171 @@
+@import '../../../assets/mixins.sass'
+@import '../../../assets/style-mixins.sass'
+    
+.book-top-container
+    padding: 0 !important
+    .top-book-box
+        background-image: url('../../../assets/woman-bg.jpg')
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+        height: 440px
+        margin-top: 50px
+        +landscape-phone() 
+            height: 370px
+        +portrait-phone()
+            height: 370px
+        .top-book-wrapper
+            width: 100%
+            height: 100%
+            opacity: 0.9
+            .image-box 
+                margin: 45px 0
+                +portrait-phone()
+                    margin: 60px 0
+                img
+                    max-height: 350px
+                    +landscape-phone() 
+                        max-height: 280px
+                    +portrait-phone()
+                        max-height: 250px
+            .description-top-box
+                margin: 75px 0
+                color: #fff
+                text-align: left
+                position: relative
+                padding-left: 5px
+                .title-top
+                    font-size: 50px 
+                    text-transform: uppercase
+                    font-weight: bold
+                    margin: 0
+                    +landscape-phone() 
+                        font-size: 30px
+                    +portrait-phone()
+                        font-size: 22px
+                .price-top 
+                    font-size: 35px
+                    font-weight: bold
+                    display: inline-block
+                    color: #e4e4e4
+                    margin: 0
+                    +landscape-phone() 
+                        font-size: 25px
+                    +portrait-phone()
+                        font-size: 30px
+                .rating-top
+                    display: inline-block
+                    padding-left: 12px
+                    margin: 0
+                    +portrait-phone()
+                        padding-left: 0
+                    i 
+                        color: #f3d427
+                        font-size: 35px
+                        +landscape-phone() 
+                            font-size: 25px
+                        +portrait-phone()
+                            font-size: 20px
+                .author-top
+                    font-size: 35px
+                    +landscape-phone() 
+                        font-size: 25px
+                    +portrait-phone()
+                        font-size: 20px
+                button 
+                    +button()
+                    padding: 12px 40px
+                    font-weight: bold
+                    border: 1px solid #fff 
+                    color: #f3d427
+                    +landscape-phone() 
+                        padding: 12px 20px
+                        border: 2px solid #fff 
+                        font-size: 18px
+                        margin-top: 15px
+                    +portrait-phone()
+                        padding: 6px 15px
+                    +smallPhoneSize()
+                        display: none
+                .view-ss
+                    display: none
+                    +smallPhoneSize()
+                        display: block
+                        text-transform: lowercase
+                        font-weight: bold
+                        text-align: right
+
+
+                                   
+
+//bg colors 
+.top-one 
+    background: #148df0
+.top-two
+    background: #f04747
+.top-three
+    background: #fc0f5e                   
+                    
+//carousel 
+.book-top-container
+    .react-multiple-carousel__arrow--left
+        top: 50%
+        left: 10% !important
+        z-index: 0 !important
+        min-width: 70px
+        min-height: 70px
+        +desktop() 
+            left: 5% !important
+        +tablet() 
+            left: 10px !important
+        +landscape-phone() 
+            min-width: 47px
+            min-height: 47px
+            left: 12px !important
+        +portrait-phone()
+            display: none
+        &:focus
+            outline: none
+        &:hover
+            box-shadow: 0 0px 18px rgba(0,0,0,0.16) !important
+        &::before
+            font-size: 30px
+           
+    
+    .react-multiple-carousel__arrow--right
+        top: 50%
+        right: 10% !important
+        z-index: 0 !important
+        min-width: 70px
+        min-height: 70px
+        +desktop() 
+            right: 5% !important
+        +tablet() 
+            right: 10px !important
+        +landscape-phone() 
+            min-width: 47px
+            min-height: 47px
+            right: 12px !important
+        +portrait-phone()
+            display: none
+        &:focus
+            outline: none
+        &:hover
+            box-shadow: 0 0px 18px rgba(0,0,0,0.16) !important
+        &::before
+            font-size: 30px
+
+.book-top-container
+    .react-multi-carousel-dot-list 
+        display: none
+        +portrait-phone()
+            display: flex
+            margin-bottom: 8px
+            li 
+                button 
+                    border: 1px solid #fff
+.book-top-container
+    .react-multi-carousel-dot--active
+        button 
+            +portrait-phone()
+                background: $activeMain

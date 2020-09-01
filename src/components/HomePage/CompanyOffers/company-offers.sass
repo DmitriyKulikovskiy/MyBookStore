@@ -1,0 +1,51 @@
+@import '../../../assets/mixins.sass'
+@import '../../../assets/style-mixins.sass'
+    
+.offer-container
+    box-shadow: 0 6px 15px 0px rgba(0,0,0,0.15)
+    .offer-box
+        display: flex
+        align-items: center
+        justify-content: center
+        border-right: 1px solid #d3d3d3
+        color: $activeMain
+        &:first-child
+            border-left: 1px solid #d3d3d3
+        i 
+            font-size: 30px
+        .offer-text-box
+            padding: 35px 0
+            line-height: 1
+            +portrait-phone() 
+                padding: 25px 0
+            p 
+                margin-bottom: 5px
+                &:first-child
+                    font-size: 20px 
+                    font-weight: bold
+                    text-transform: uppercase
+
+.br 
+    display: none
+    +portrait-phone() 
+        display: block
+
+.offer-container
+    +smallSizeScroll()
+        overflow-x: auto
+        white-space: nowrap   
+    .offer-box
+        i 
+            padding-right: 8px
+
+::-webkit-scrollbar 
+    width: 1em
+
+::-webkit-scrollbar-track 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4)
+
+::-webkit-scrollbar-thumb 
+    background-color: $activeMain
+    outline: 1px solid $activeMain
+
+        

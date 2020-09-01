@@ -1,0 +1,67 @@
+@import '../../assets/style-mixins.sass'
+@import '../../assets/mixins.sass'
+
+
+//part 1
+.side-bar
+    position: sticky    
+    top: 8%
+    margin-top: 25px
+    p 
+        margin: 0 0 8px 0
+        font-size: 28px
+        font-weight: bold
+    ul 
+        padding: 0
+
+        li 
+            list-style: none
+            line-height: 2
+            font-size: 20px
+            cursor: pointer
+            font-style: italic
+            &:hover
+                color: $activeMain
+.price-range
+    p 
+        &:first-child
+            font-size: 28px
+            font-weight: bold
+            margin-bottom: 15px
+    .range-cursor 
+        margin-bottom: 5px
+        font-size: 20px
+        text-align: center
+    input 
+        width: 100%
+        cursor: pointer
+
+// part 2
+
+.logo-category-box
+    margin: 35px 0 15px 0
+    img 
+        width: 100%
+
+.category-title
+    font-size: 48px
+.category-description
+    font-size: 18px
+
+.sort-by
+    span 
+        font-size: 22px
+        margin-right: 8px
+    select 
+        border-radius: 5px
+        cursor: pointer
+
+// pages 
+
+.pagination 
+    margin-top: 30px
+    span 
+        font-size: 20px
+        padding: 4px 10px 0 0
+    li 
+        cursor: pointer

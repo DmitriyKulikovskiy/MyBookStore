@@ -1,0 +1,91 @@
+@import '../../../assets/mixins.sass'
+@import '../../../assets/style-mixins.sass'
+    
+.bg-home-page
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    background-image: url('../../../assets/bg1.jpg')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    img 
+        width: 100%
+    .box-discount 
+        padding: 120px 250px 120px 0
+        text-transform: uppercase
+        color: $mainColor
+        +desktop() 
+            padding: 120px 150px 120px 0
+        +tablet()
+            padding: 90px 90px 90px 0
+        +landscape-phone() 
+            padding: 50px 80px 50px 0
+        +portrait-phone() 
+            padding: 15px 25px 25px 0
+        +smallTable()
+            padding: 15px 70px 25px 0
+        .first-line
+            font-size: 40px
+            color: $activeMain
+            +desktop() 
+                font-size: 30px
+            +tablet()
+                font-size: 22px
+            +landscape-phone() 
+                font-size: 18px
+            +portrait-phone() 
+                font-size: 12px
+            +smallTable()
+                font-size: 15px
+        .second-line
+            font-size: 60px
+            font-weight: bold
+            +desktop() 
+                font-size: 50px
+            +tablet()
+                font-size: 40px
+            +landscape-phone() 
+                font-size: 30px
+            +portrait-phone() 
+                font-size: 18px
+            +smallTable()
+                font-size: 22px
+            span 
+                color: $activeMain
+        .third-line
+            font-size: 40px
+            +desktop() 
+                font-size: 30px
+            +tablet()
+                font-size: 22px
+            +landscape-phone() 
+                font-size: 18px
+            +portrait-phone() 
+                font-size: 12px
+            +smallTable()
+                font-size: 15px
+        .fourth-line
+            button 
+                +button()
+                color: $activeMain
+                border: 1px solid $activeMain
+                padding: 8px 35px
+                margin-top: 12px
+                font-size: 20px
+                +tablet()
+                    padding: 8px 25px
+                    font-size: 16px
+                +landscape-phone() 
+                    padding: 8px 25px
+                    font-size: 16px
+                +portrait-phone() 
+                    padding: 5px 10px
+                    font-size: 12px
+                
+                &:hover
+                    color: $mainColor
+                    border: 1px solid $mainColor
+                    
+
+            

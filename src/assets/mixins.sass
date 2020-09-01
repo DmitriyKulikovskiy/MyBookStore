@@ -1,0 +1,60 @@
+@mixin portrait-phone() 
+    @media (max-width: 575.98px) 
+        @content
+
+@mixin landscape-phone() 
+    @media (min-width: 576px) and (max-width: 767.98px)
+        @content
+
+@mixin tablet() 
+    @media (min-width: 768px) and (max-width: 991.98px) 
+        @content
+
+@mixin desktop() 
+    @media (min-width: 992px) and (max-width: 1199.98px)
+        @content
+
+@mixin desktop-width()
+    @media (min-width: 1200px)
+        @content
+
+@mixin desktop-width-max()
+    @media (max-width: 1200px)
+        @content
+
+@mixin phoneSizeAll() 
+    @media (max-width: 475.98px) 
+        @content
+
+@mixin navSize()
+    @media (max-width: 991.98px)
+        @content
+
+@mixin bgSize()
+    @media (max-width: 767.98px)
+        @content
+
+@mixin smallTable()
+    @media (min-width: 434.98px) and (max-width: 575.98px) 
+        @content
+
+@mixin smallSizeScroll()
+    @media (max-width: 1200.98px)
+        @content
+
+@mixin smallPhoneSize()
+    @media (max-width: 320.99px)
+        @content
+
+@mixin sliderHoverEffectsOn()
+    @media (min-width: 991.99px)
+        @content
+
+@mixin sliderHoverEffectsOf()
+    @media (max-width: 991.98px)
+        @content
+
+$mainColor: #2c3e50
+$dimMain: #2c3e5079
+$activeMain: #01a2ff
+$newsGrey: #747474

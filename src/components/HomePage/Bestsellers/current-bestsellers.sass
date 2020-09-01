@@ -1,0 +1,176 @@
+@import '../../../assets/mixins.sass'
+@import '../../../assets/style-mixins.sass'
+    
+.books-container
+    margin-top: 35px 
+    color: $mainColor
+    .bestsellers-title
+        font-size: 32px
+        margin-bottom: 15px
+        font-weight: bold
+        padding: 0 12.5px
+        +portrait-phone()
+            text-align: center
+            padding: 0
+    .book-element
+        cursor: pointer
+        &:hover 
+            .star-row 
+                display: none
+        .book-content
+            display: inline-block
+            min-height: 338px     
+            position: relative
+            //hover part start ------>
+            +sliderHoverEffectsOf()
+                .wishlist-box
+                    position: absolute
+                    top: 10px
+                    right: 5px
+                    span 
+                        display: block
+                        background: $activeMain
+                        width: 35px
+                        height: 35px
+                        border-radius: 35px
+                        position: relative
+                        .fa-heart,.fa-check
+                            color: #ffffff
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            margin-right: -50%
+                            transform: translate(-50%, -50%)
+                .add-to-cart-box
+                    position: absolute
+                    top: 50px
+                    right: 5px
+                    span 
+                        display: block
+                        background: $activeMain
+                        width: 35px
+                        height: 35px
+                        border-radius: 35px
+                        position: relative
+                        .fa-cart-plus
+                            color: #ffffff
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            margin-right: -50%
+                            transform: translate(-50%, -50%)
+
+            +sliderHoverEffectsOn()
+                &:hover
+                    p
+                        display: none 
+                    .wishlist-box
+                        position: absolute
+                        top: 10px
+                        right: 10px
+                        span 
+                            display: block
+                            background: $activeMain
+                            width: 35px
+                            height: 35px
+                            border-radius: 35px
+                            position: relative
+                            &:hover
+                                background: #ffffff
+                                border: 1px solid $activeMain
+                                i 
+                                    color: $activeMain
+                            i 
+                                color: #ffffff
+                                position: absolute
+                                top: 50%
+                                left: 50%
+                                margin-right: -50%
+                                transform: translate(-50%, -50%)
+                    button
+                        +button()
+                        display: block    
+                        color: $activeMain
+                        border: 1px solid $activeMain  
+                        margin-top: 20px
+                        margin-left: 32px
+                        outline: none
+                        &:hover
+                            color: $activeMain
+            // <----- hover part end
+            img 
+                height: 240px 
+                width: 160px 
+                display: block
+                box-shadow: 0 0px 9px rgba(0,0,0,0.5) 
+                +portrait-phone()
+                    box-shadow: none
+                +smallPhoneSize
+                    width: 140px
+            p 
+                margin: 0
+                font-size: 16px
+                text-align: left
+                +smallPhoneSize
+                    font-size: 13px
+            .title-book
+                margin-top: 8px
+                font-size: 20px
+                font-weight: bold
+                line-height: 1
+                width:0
+                min-width: 100%  
+                +smallPhoneSize()
+                    font-size: 17px
+            .price 
+                font-weight: bold
+                font-size: 18px
+                +smallPhoneSize()
+                    font-size: 20px
+            button,span
+                display: none
+
+
+
+
+.description-content
+    .price
+        position: absolute
+        bottom: 0
+
+.react-multiple-carousel__arrow--left
+    top: 110px
+    left: 0 !important
+    z-index: 0 !important
+    &:focus
+        outline: none
+    &:hover
+        box-shadow: 0 0px 18px rgba(0,0,0,0.16) !important
+    
+        
+.react-multiple-carousel__arrow--right
+    right: 0 !important
+    top: 110px
+    z-index: 0 !important
+    &:focus
+        outline: none
+    &:hover
+        box-shadow: 0 0px 18px rgba(0,0,0,0.16) !important
+
+.react-multi-carousel-list 
+    text-align: center
+
+.color 
+    a 
+        text-decoration: none
+        color: $mainColor
+
+.star-row 
+    position: absolute
+    bottom: 0
+    right: 6%
+    .fa-star
+        color: gold
+    .silver 
+        color: silver
+

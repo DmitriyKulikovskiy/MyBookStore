@@ -1,0 +1,228 @@
+@import '../../assets/style-mixins.sass'
+@import '../../assets/mixins.sass'
+
+.container 
+    height: auto !important
+    
+.main-box
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh 
+    font-family: 'Abel', sans-serif
+    position: relative
+    .box-left
+        color: #ffffff
+        +landscape-phone() 
+            margin-bottom: 25px
+        +portrait-phone() 
+            margin: 25px 0 25px 0
+        h1 
+            font-size: 55px
+            margin: 0
+            +desktop()
+                font-size: 45px
+            +tablet()
+                font-size: 33px
+            +landscape-phone() 
+                font-size: 52px
+            +portrait-phone() 
+                font-size: 28px
+            span 
+                font-size: 50px
+                color: #f01426
+                +desktop()
+                    font-size: 45px
+                +tablet()
+                    font-size: 33px
+                +portrait-phone() 
+                    font-size: 28px
+        .slog 
+            font-size: 30px
+            +tablet()
+                font-size: 22px
+            +portrait-phone() 
+                font-size: 18px
+        .description 
+            font-size: 18px
+            margin-top: 15px
+            +tablet()
+                font-size: 15px
+            +portrait-phone() 
+                font-size: 15px
+        button 
+            +button()
+                margin-top: 20px
+            +landscape-phone() 
+                float: right
+            +portrait-phone() 
+                float: right
+    .box-right
+        background: #ffffff
+        padding: 0 15px 0 15px
+        text-align: center
+        color: #000
+        border-top-right-radius: 12px
+        border-bottom-right-radius: 12px
+        box-shadow: 1px 1px 0px rgba(0,0,0,0.2)
+        +landscape-phone() 
+            margin-bottom: 25px
+        +portrait-phone() 
+            margin: 0 4px 25px 4px
+        hr 
+            margin: 0 0 8px 0
+            background: #dbdbdb
+        .title-form 
+            font-size: 30px   
+            padding-top: 20px  
+            +desktop() 
+                font-size: 25px
+            +tablet()
+                font-size: 20px
+            +portrait-phone() 
+                font-size: 25px
+            span 
+                color: #f01426
+                font-size: 36px  
+                +desktop() 
+                    font-size: 28px
+                +tablet()
+                    font-size: 20px
+                +portrait-phone() 
+                    font-size: 25px
+        form  
+            .form-group
+                margin-top: 20px
+                input 
+                    border: 1px solid #000
+            .remember-me
+                input 
+                    width: 20px
+                    height: 20px
+                    cursor: pointer
+                .remember-me-title
+                    
+            .button-logIn
+                button 
+                    +button()
+                        margin: 12px 0 0 0
+                        width: 220px
+                        padding: 6px 5px
+                        background: #f01426
+                        color: #fff
+                        &:hover
+                            background: #f01426d5
+                .change-sign-button
+                    span
+                        color: #ff0015 
+                        text-decoration: underline
+                        cursor: pointer
+                        width: auto
+                        &:hover
+                            color: #f01426ad
+                        
+    .logIn-with-social
+        hr
+            margin: 0 0 8px 0
+            background: #dbdbdb
+        .social-title
+            color: #000
+            font-size: 30px
+            +desktop() 
+                font-size: 25px
+            +tablet()
+                font-size: 20px
+            +portrait-phone() 
+                font-size: 24px
+            span 
+                color:#f01426 
+        .box-button-container
+            .log-facebook
+                i 
+                    float: left
+                    font-size: 18px
+                    padding: 3px 0 0 14px
+                +button()
+                    width: 220px
+                    background: #4267B2
+                    border: none
+                    color: #fff
+                    margin-top: 15px
+                    &:hover
+                        background: #4267b2e0            
+            .log-google
+                i 
+                    float: left
+                    font-size: 18px
+                    padding: 3px 0 0 14px
+                +button()
+                    width: 220px
+                    background: #4285F4
+                    border: none
+                    color: #fff
+                    margin-top: 10px
+                    &:hover
+                        background: #4286f4e7
+            .log-instagram
+                i 
+                    float: left
+                    font-size: 18px
+                    padding: 3px 0 0 14px
+                +button()
+                    background: #C13584
+                    border: none
+                    color: #fff
+                    margin: 10px 0 30px 0
+                    width: 220px
+                    &:hover
+                        background: #c13584d7
+
+
+.error-container
+    .error-box
+        display: block
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: rgba(0, 0, 0, 0.5)
+        z-index: 1
+        .error-alert
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #000
+            font-size: 28px
+            width: auto
+            height: 75px
+            background: #d4d4d4
+            border-radius: 8px
+            padding: 0 30px 0 30px
+            margin: 0 5px 0 5px
+            +landscape-phone() 
+                font-size: 20px
+            +portrait-phone()
+                font-size: 13px
+                padding: 0 8px 0 8px
+            i 
+                color: #ff0015 
+                padding-left: 10px
+                cursor: pointer
+                font-size: 35px
+                +portrait-phone()
+                    font-size: 25px
+                &:hover
+                    transition: 0.3s
+                    color: #ff00159c 
+
+.hider-error
+    display: none
+
+
+
+
+            

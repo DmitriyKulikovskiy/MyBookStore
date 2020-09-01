@@ -1,0 +1,174 @@
+@import '../../../assets/style-mixins.sass'
+@import '../../../assets/mixins.sass'
+
+
+.header 
+    color: $dimMain
+    width: 100%
+    height: 75px
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: space-around
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75)
+    -moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.75)
+    box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.75)
+    .logo 
+        display: flex
+        align-items: center
+        h1
+            margin: 0
+            text-transform: uppercase
+            font-size: 50px
+            -webkit-animation: pulsate 1.2s linear infinite
+            animation: pulsate 1.2s linear infinite
+            @-webkit-keyframes pulsate
+                50%
+                    color: $mainColor
+                    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 3px $mainColor, 0 0 1px $mainColor
+            @keyframes pulsate
+                50%
+                    color: $mainColor
+                    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 3px $mainColor, 0 0 1px $mainColor
+            +tablet() 
+                font-size: 35px
+            +landscape-phone() 
+                font-size: 30px
+            +portrait-phone() 
+                font-size: 35px
+        i 
+            font-size: 65px
+            color: $mainColor
+            +tablet() 
+                font-size: 45px
+            +landscape-phone() 
+                font-size: 40px
+            +portrait-phone() 
+                font-size: 45px
+    .search-bar 
+        width: 35%
+        position: relative
+        +portrait-phone() 
+            display: none
+        input 
+            width: 100%
+            height: 40px
+            border: 1px solid $mainColor
+            background: none
+            color: $dimMain
+            border-radius: 16px
+            text-align: center
+            text-transform: uppercase
+            font-style: italic
+            outline: none
+            color: $mainColor
+            +tablet() 
+                height: 35px
+                text-transform: none
+            +landscape-phone() 
+                height: 30px
+                text-transform: none
+                font-size: 13px
+                width: 95%
+        i 
+            position: absolute
+            font-size: 24px
+            top: 7px
+            left: 12px
+            +tablet() 
+                font-size: 18px
+                top: 8px
+            +landscape-phone() 
+                font-size: 15px
+                top: 7px
+
+    .menu-right
+        display: flex
+        align-items: center
+        .user, .shopping-cart,.wishlist-icon-box
+            color: $mainColor
+            cursor: pointer
+            display: flex 
+            align-items: center
+            i 
+                font-size: 30px
+                margin-right: 12px
+                +landscape-phone() 
+                    font-size: 22px
+                    margin-right: 8px
+                +portrait-phone() 
+                    display: none
+            .fa-heart
+                font-size: 26px
+                +landscape-phone() 
+                    font-size: 20px
+
+            span 
+                font-size: 18px
+                text-transform: uppercase
+                cursor: pointer
+                margin-right: 4px
+                color: $mainColor
+            &:hover 
+                color: $dimMain
+        .logout
+            button
+                +button()
+                padding: 1px 6px
+                border-color: $mainColor
+                color: $mainColor
+                +landscape-phone() 
+                    padding: 1px 3px
+                    font-size: 12px
+                +portrait-phone() 
+                    display: none
+                &:hover
+                    color: $mainColor
+    
+.search-bar-phone
+    display: none
+    +portrait-phone() 
+        display: block
+        position: relative
+    input
+        +portrait-phone() 
+            display: block
+            width: 100%
+            height: 40px
+            border-bottom: 1px solid $mainColor
+            border-right: none
+            border-top: none
+            border-left: none
+            background: none
+            color: $dimMain
+            text-align: center
+            text-transform: uppercase
+            font-style: italic
+            outline: none
+    i 
+        position: absolute
+        font-size: 24px
+        top: 7px
+        left: 12px
+        color: $mainColor
+
+
+.user-email 
+    display: none
+
+.user
+    position: relative
+    &:hover 
+        .user-email
+            display: block
+            position: absolute
+            top: 32px
+            left: -35px
+            border: 1px solid $mainColor
+            background: #e9e9e9
+            border-radius: 6px
+            padding: 4px 8px
+            font-size: 16px !important
+            &:hover
+                color: $mainColor !important
+

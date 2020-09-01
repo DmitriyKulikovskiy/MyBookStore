@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "rating": 4,
+        "title": "Pellentesque posuere orci",
+        "text": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos comodous.",
+        "name": "John Mc.Walter"
+    },
+    {
+        "id": 2,
+        "rating": 5,
+        "title": "Pellentesque",
+        "text": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos comodous.",
+        "name": "Allan D."
+    },
+    {
+        "id": 3,
+        "rating": 2,
+        "title": "Quisquemos sodales",
+        "text": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos comodous.",
+        "name": "Danny White"
+    },
+    {
+        "id": 4,
+        "rating": 5,
+        "title": "Donec id tellus",
+        "text": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos comodous.",
+        "name": "Anna"
+    }
+]
