@@ -15,11 +15,12 @@ const HomePage = ({
     newsData,
     addToWishlist,
     addToShoppingCart,
-    removeFromWishList
+    removeFromWishList,
+    changeDiscountStatus
 }) => {
     return (
         <>
-            <DiscountOffer />
+            <DiscountOffer changeDiscountStatus={changeDiscountStatus}/>
             <CompanyOffers />
             <CurrentBestsellers
                 booksData={booksData}

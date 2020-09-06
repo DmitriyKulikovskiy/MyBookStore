@@ -3,6 +3,7 @@ import thunkMiddleware from 'redux-thunk'
 import authReducer from "./auth-reducer";
 import homeReducer from "./books-reducer";
 import booksPageReducer from "./booksPage-reducer"
+import checkOutReducer from "./checkOut-reducer";
 
 // const saveToLocalStorage = state => {
 //     try {
@@ -24,10 +25,12 @@ import booksPageReducer from "./booksPage-reducer"
 //     }
 // }
 
+
 const reducers = combineReducers({
     authReducer,
     homeReducer,
-    booksPageReducer
+    booksPageReducer,
+    checkOutReducer    
 })
 
 // const persistedState = loadFromLocalStorage()

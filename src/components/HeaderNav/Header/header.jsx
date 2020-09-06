@@ -2,12 +2,38 @@ import React from "react";
 import "./header.sass";
 import NavbarMobile from "../Navbar/navbar-mobile";
 import { fire } from "../../../firebase/config";
+import { NavLink } from "react-router-dom";
+import SearchBook from "./search";
 
-const Header = ({ userEmail, setIsAuth }) => {
+const Header = ({
+    userEmail,
+    setIsAuth,
+    searchQuery,
+    searchBook,
+    booksData,
+    clearResult,
+}) => {
+    //logOut func
     const logOut = () => {
         fire.auth().signOut();
         setIsAuth(false);
     };
+
+    //search params (home page)
+    const getSearchItems =
+        searchQuery && searchQuery.trim().length
+            ? booksData.filter((book) => {
+                  if (
+                      book &&
+                      book.title &&
+                      book.title
+                          .toLowerCase()
+                          .includes(searchQuery.toLowerCase())
+                  ) {
+                      return book;
+                  }
+              })
+            : booksData;
 
     return (
         <div>
@@ -21,6 +47,13 @@ const Header = ({ userEmail, setIsAuth }) => {
                     <input
                         type="text"
                         placeholder="What book are you looking for?"
+                        onChange={(e) => searchBook(e.target.value)}
+                        value={searchQuery}
+                    />
+                    <SearchBook
+                        searchQuery={searchQuery}
+                        getSearchItems={getSearchItems}
+                        clearResult={clearResult}
                     />
                 </div>
                 <div className="menu-right">
@@ -33,18 +66,22 @@ const Header = ({ userEmail, setIsAuth }) => {
                         <span className="user-email">{userEmail}</span>
                     </div>
                     <div className="wishlist-icon-box">
-                        <i
-                            className="fa fa-heart"
-                            aria-hidden="true"
-                            title="My Wishlist"
-                        ></i>
+                        <NavLink to="/WishList">
+                            <i
+                                className="fa fa-heart"
+                                aria-hidden="true"
+                                title="My Wishlist"
+                            ></i>
+                        </NavLink>
                     </div>
                     <div className="shopping-cart">
-                        <i
-                            className="fa fa-shopping-cart"
-                            aria-hidden="true"
-                            title="My Shopping Cart"
-                        ></i>
+                        <NavLink to="/ShoppingCart">
+                            <i
+                                className="fa fa-shopping-cart"
+                                aria-hidden="true"
+                                title="My Shopping Cart"
+                            ></i>
+                        </NavLink>
                     </div>
                     <div className="logout">
                         <button onClick={logOut}>LogOut</button>
@@ -57,6 +94,13 @@ const Header = ({ userEmail, setIsAuth }) => {
                 <input
                     type="text"
                     placeholder="What book are you looking for?"
+                    onChange={(e) => searchBook(e.target.value)}
+                    value={searchQuery}
+                />
+                <SearchBook
+                    searchQuery={searchQuery}
+                    getSearchItems={getSearchItems}
+                    clearResult={clearResult}
                 />
             </div>
         </div>
@@ -64,7 +108,3 @@ const Header = ({ userEmail, setIsAuth }) => {
 };
 
 export default Header;
-
-// <i className="fa fa-user" aria-hidden="true"></i>
-
-// <i className="fa fa-shopping-cart" aria-hidden="true"></i>

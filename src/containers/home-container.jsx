@@ -7,6 +7,7 @@ import {
     addToShoppingCart,
     removeFromWishList,
 } from "../redux/thunk/books-thunk";
+import { changeDiscountStatus } from "../redux/checkOut-reducer";
 
 class HomePageContainer extends React.Component {
     render() {
@@ -19,7 +20,7 @@ const mapStateToProps = (state) => {
         userEmail: state.authReducer.userEmail,
         isAuth: state.authReducer.isAuth,
         booksData: state.homeReducer.booksData,
-        newsData: state.homeReducer.newsData,
+        newsData: state.homeReducer.newsData
     };
 };
 
@@ -29,4 +30,5 @@ export default connect(mapStateToProps, {
     addToWishlist,
     addToShoppingCart,
     removeFromWishList,
+    changeDiscountStatus
 })(HomePageContainer);

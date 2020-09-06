@@ -9,8 +9,21 @@ import AddedToCart from "./components/HomePage/HomeModalScreens/added-to-cart";
 import { changeStatusCartModal } from "./redux/books-reducer";
 import SelectedBookContainer from "./containers/selected-book-container";
 import BookPageContainer from "./containers/book-page-container";
+import ShoppingCartContainer from "./containers/shopping-cart-container";
+import WishlistContainer from "./containers/wishlist-container";
+import CheckOutContainer from "./containers/check-out-container";
+import { changeDiscountStatus } from "./redux/checkOut-reducer";
+import GetDiscount from "./components/HomePage/HomeModalScreens/get-discount";
 
-const App = ({ isAuth, statusCartModal, cartModalBook, shoppingCart,changeStatusCartModal }) => {
+const App = ({
+    isAuth,
+    statusCartModal,
+    cartModalBook,
+    shoppingCart,
+    changeStatusCartModal,
+    discountStatus,
+    changeDiscountStatus,
+}) => {
     // const verifyIsAuth = isAuth === true
 
     return (
@@ -23,9 +36,25 @@ const App = ({ isAuth, statusCartModal, cartModalBook, shoppingCart,changeStatus
                     changeStatusCartModal={changeStatusCartModal}
                 />
             ) : null}
+            {discountStatus === true ? (
+                <GetDiscount changeDiscountStatus={changeDiscountStatus} />
+            ) : null}
+
             <HeaderNavContainer />
+            <Route
+                path="/ShoppingCart"
+                render={() => <ShoppingCartContainer />}
+            />
+            <Route
+                path="/ProceedToCheckOut"
+                render={() => <CheckOutContainer />}
+            />
+            <Route path="/WishList" render={() => <WishlistContainer />} />
             <Route path="/Home" render={() => <HomeContainer />} />
-            <Route path='/Book/:id' render={({ match }) => <SelectedBookContainer match={match} />}/>
+            <Route
+                path="/Book/:id"
+                render={({ match }) => <SelectedBookContainer match={match} />}
+            />
             <Route path="/Books" render={() => <BookPageContainer />} />
             <Footer />
         </div>
@@ -38,8 +67,12 @@ const mapStateToProps = (state) => ({
     statusCartModal: state.homeReducer.statusCartModal,
     cartModalBook: state.homeReducer.cartModalBook,
     shoppingCart: state.homeReducer.shoppingCart,
+    discountStatus: state.checkOutReducer.discountStatus,
 });
 
-const AppContainer = connect(mapStateToProps,{changeStatusCartModal})(App);
+const AppContainer = connect(mapStateToProps, {
+    changeStatusCartModal,
+    changeDiscountStatus,
+})(App);
 
 export default AppContainer;

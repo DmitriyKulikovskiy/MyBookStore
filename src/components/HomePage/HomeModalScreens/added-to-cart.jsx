@@ -1,5 +1,6 @@
 import React from "react";
 import "./added-to-cart.sass";
+import { NavLink } from "react-router-dom";
 
 const AddedToCart = ({
     cartModalBook,
@@ -10,7 +11,7 @@ const AddedToCart = ({
         <div className="modal-cart-container">
             <div className="container modal-cart-box">
                 <div className="modal-title">
-                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i className="fa fa-check" aria-hidden="true"></i>
                     Product successfully added to your Shopping Cart
                 </div>
                 <div className="modal-book-description">
@@ -45,7 +46,11 @@ const AddedToCart = ({
                         <button onClick={changeStatusCartModal}>
                             Continue shopping
                         </button>
-                        <button>Proceed to checkout</button>
+                        <NavLink to="/ShoppingCart">
+                            <button onClick={changeStatusCartModal}>
+                                Proceed to checkout
+                            </button>
+                        </NavLink>
                     </div>
                 </div>
             </div>

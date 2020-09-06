@@ -19,7 +19,6 @@ const BookPage = ({
     filterPrice,
     isFilteredPrice,
 }) => {
-
     //pagination
     const [currentPage, setCurrentPage] = useState(1);
     const [booksPerPage] = useState(8);
@@ -27,7 +26,7 @@ const BookPage = ({
     const indexOfFirstBook = indexOfLastBook - booksPerPage;
     const changePage = (pageNumber) => setCurrentPage(pageNumber);
 
-    // filter range price
+    // filter range price && cut portion size
     const portionBooks =
         categories === "All Books"
             ? booksData
@@ -41,7 +40,6 @@ const BookPage = ({
     const filteredBooksData = portionBooks.sort((a, b) =>
         isFilteredPrice === "Price, low" ? a.price - b.price : b.price - a.price
     );
-
 
     return (
         <div className="container">
@@ -146,7 +144,7 @@ const BookPage = ({
                                                     >
                                                         <span>
                                                             <i
-                                                                class="fa fa-check"
+                                                                className="fa fa-check"
                                                                 aria-hidden="true"
                                                                 title="Remove from wishlist"
                                                             ></i>

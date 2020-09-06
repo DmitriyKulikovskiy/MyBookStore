@@ -94,3 +94,58 @@
 
                 &:hover 
                     color: $mainColor
+
+
+//discount styles
+
+.modal-discount-container
+    background-color: #00000085
+    width: 100%
+    height: 100%
+    z-index: 10000
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    .modal-discount-box
+        background-color: #ffffff
+        border-radius: 20px
+        padding: 35px 30px
+        max-width: 800px
+        box-shadow: 0 0 7px 5px rgba(0,0,0,0.3)
+        margin: 0 8px
+        position: relative
+        +smallPhoneSize()
+            padding: 25px 30px
+        i 
+            font-size: 30px
+            color: $activeMain
+            position: absolute
+            right: 10px
+            top: 5px
+            cursor: pointer
+        .title-discount
+            font-size: 45px
+            font-weight: bold
+            text-transform: uppercase
+            text-align: center
+            margin: 6px 0 12px 0
+        .description-discount
+            font-size: 16px
+            text-align: center
+            p 
+                border-top: 1px solid #afafaf
+                border-bottom: 1px solid #afafaf
+                margin: 0 20%
+                padding: 8px 0
+                text-transform: uppercase
+        .code
+            text-align: center
+            font-size: 18px
+            margin-top: 20px
+        .discount-code
+            text-align: center
+            font-size: 50px
+            text-transform: uppercase
+            color: $activeMain
+            font-weight: bold

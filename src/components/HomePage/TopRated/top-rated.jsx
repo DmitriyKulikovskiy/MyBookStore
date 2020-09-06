@@ -55,7 +55,7 @@ const TopRatedBooks = ({
                     deviceType={deviceType}
                 >
                     {bestSellers.map((book, index) => (
-                        <div className="book-element">
+                        <div key={book.id} className="book-element">
                             <div className="star-row">
                                 <Rating
                                     initialRating={book.rating}

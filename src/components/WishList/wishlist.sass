@@ -1,0 +1,114 @@
+@import '../../assets/style-mixins.sass'
+@import '../../assets/mixins.sass'
+    
+.wishlist-logo
+    width: 100%
+    height: 185px
+    background-image: url('../../assets/shp-cart/cart_title.jpg')
+    +portrait-phone() 
+        height: 130px
+    .logo-bg
+        background: rgba(27,139,204,0.9)
+        opacity: 1
+        text-transform: uppercase
+        height: 100%
+        display: flex
+        justify-content: center 
+        align-items: center
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        margin: 0 auto 50px
+        p 
+            margin: 0
+            font-size: 40px
+            color: #fff
+
+
+
+.shopping-header
+    display: flex
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: bold
+    letter-spacing: 2px
+    padding: 35px 0 10px 0
+    border-bottom: 1px solid #b8b8b8
+    +portrait-phone() 
+        display: none
+    div 
+        text-align: center
+
+
+.wish-element
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 18px
+    border-bottom: 1px solid #b8b8b8
+    padding: 10px 0
+    margin-bottom: 10px
+    +navSize()     
+        flex-direction: column
+    &:first-child
+        border-top: 1px solid #b8b8b8
+    .wish-item   
+        display: flex
+        justify-content: center
+        align-items: center
+    div
+        text-align: center
+        .none
+            display: none 
+            +navSize()
+                display: block
+                font-weight: bold
+        p 
+            margin: 0
+            +navSize()
+                display: flex 
+                align-items: center
+                justify-content: space-between
+        a 
+            text-decoration: none
+            color: #000 
+            cursor: pointer
+            text-transform: uppercase
+            font-size: 14px
+            &:hover 
+                color: $activeMain
+        .fa-times
+            cursor: pointer
+            font-size: 22px
+    img 
+        width: 70px
+        heigth: 120px
+        +navSize()
+            width: 100%
+            height: auto
+            margin-bottom: 20px
+
+
+.center-block 
+    display: flex 
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 50px 0
+    margin-bottom: -100px
+    div 
+        font-size: 26px
+    .continue-shopping
+        &:hover 
+            color: $activeMain
+            transition: 0.3s
+        i 
+            font-size: 20px
+            margin-right: 5px
+        a 
+            text-decoration: none
+            color: #000
+            &:hover 
+                color: $activeMain
+                transition: 0.3s

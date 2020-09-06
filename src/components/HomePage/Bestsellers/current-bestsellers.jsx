@@ -55,7 +55,7 @@ const CurrentBestsellers = ({
                     deviceType={deviceType}
                 >
                     {bestSellers.map((book, index) => (
-                        <div className="book-element">
+                        <div key={book.id} className="book-element">
                             <div className="star-row">
                                 <Rating
                                     initialRating={book.rating}
@@ -116,7 +116,7 @@ const CurrentBestsellers = ({
                                         >
                                             <span>
                                                 <i
-                                                    class="fa fa-check"
+                                                    className="fa fa-check"
                                                     aria-hidden="true"
                                                     title="Remove from wishlist"
                                                 ></i>

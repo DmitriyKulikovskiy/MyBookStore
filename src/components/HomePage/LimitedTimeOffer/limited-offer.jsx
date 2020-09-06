@@ -16,7 +16,7 @@ const LimitedOffer = ({
             <div className="limited-offer-wrapper">
                 <div className="limited-offer-box">
                     {booksSale.map((book, index) => (
-                        <div className="book-element">
+                        <div key={book.id} className="book-element">
                             <div className="limited-star-row">
                                 <Rating
                                     initialRating={book.rating}

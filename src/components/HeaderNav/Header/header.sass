@@ -90,6 +90,10 @@
             cursor: pointer
             display: flex 
             align-items: center
+            a
+                color: $mainColor
+                &:hover 
+                    color: $dimMain
             i 
                 font-size: 30px
                 margin-right: 12px
@@ -172,3 +176,59 @@
             &:hover
                 color: $mainColor !important
 
+
+//search result 
+.search-result-container
+    background: blue
+    z-index: 1000
+    width: 100%
+    max-height: 400px
+    overflow-y: scroll
+    text-align: left
+    position: absolute
+    top: 85%
+    width: 100%
+    max-width: 570px
+    padding: 0px
+    margin: 15px 0 0
+    border: none
+    background: #fff
+    -webkit-box-shadow: 0 0px 18px rgba(0,0,0,0.21)
+    padding: 30px 15px
+    a 
+        text-decoration: none
+        color: #000
+    img 
+        width: 100px
+        +tablet() 
+            width: 70px
+        +landscape-phone() 
+            width: 80px
+    .result-element
+        display: flex
+        margin: 10px 4px 0 0
+        &:hover
+            border-top: 1px solid $activeMain
+            border-bottom: 1px solid $activeMain
+        p 
+            font-size: 24px
+            color: $activeMain
+            margin: 10px 0 5px 5px
+            +tablet() 
+                font-size: 20px
+            +landscape-phone()
+                font-size: 18px
+            &:first-child
+                font-size: 22px
+                color: #000
+                +tablet() 
+                    font-size: 18px
+                +landscape-phone()
+                    font-size: 15px
+    span 
+        font-size: 18px
+            
+        
+
+.hide 
+    display: none

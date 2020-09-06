@@ -2,6 +2,7 @@ import React from "react";
 import "./top3.sass";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { NavLink } from "react-router-dom";
 
 const TopThree = ({ booksData,deviceType }) => {
     const responsive = {
@@ -83,7 +84,9 @@ const TopThree = ({ booksData,deviceType }) => {
                                             <p className="author-top">
                                                 Author: {book.author}
                                             </p>
-                                            <button>View detail</button>
+                                            <NavLink to={'Book/' + book.id}>
+                                                <button>View detail</button>
+                                            </NavLink>
                                             <div className="view-ss">
                                                 View Details
                                             </div>

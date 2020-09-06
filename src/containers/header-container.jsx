@@ -3,6 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux';
 import HeaderNav from '../components/HeaderNav/header-nav'
 import { getUserEmail,setIsAuth } from '../redux/auth-reducer';
+import { searchBook,clearResult } from '../redux/books-reducer';
 
 class HeaderNavContainer extends React.Component {
     render(){
@@ -17,9 +18,11 @@ class HeaderNavContainer extends React.Component {
 const mapStateToProps = (state) => {
     return {
         userEmail: state.homeReducer.userEmail,
-        isAuth: state.homeReducer.isAuth
+        isAuth: state.homeReducer.isAuth,
+        searchQuery: state.homeReducer.searchQuery,
+        booksData: state.homeReducer.booksData
     }
 }
 
 
-export default connect(mapStateToProps, {getUserEmail,setIsAuth})(HeaderNavContainer)
+export default connect(mapStateToProps, {getUserEmail,setIsAuth,searchBook,clearResult})(HeaderNavContainer)
