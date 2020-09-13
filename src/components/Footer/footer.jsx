@@ -35,22 +35,22 @@ const Footer = () => {
                         </p>
                         <div className="footer-item-contacts">
                             <p>
-                                <NavLink to='/'>
+                                <a href='mailto:dmitriy.kulikovskiy23@gmail.com'>
                                     <i className="fa fa-google" aria-hidden="true"></i>
                                     <span>Google</span>
-                                </NavLink>
+                                </a>
                             </p>
                             <p>
-                                <NavLink to='/'>
+                                <a href='https://www.linkedin.com/in/dmitriy-kulikovskiy'>
                                     <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                                     <span>LinkedIn</span>
-                                </NavLink>
+                                </a>
                             </p>
                             <p>
-                                <NavLink to='/'>
+                                <a href='https://t.me/dmitriy_k23'>
                                     <i className="fa fa-telegram" aria-hidden="true"></i>
                                     <span>Telegram</span>
-                                </NavLink>
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -60,10 +60,10 @@ const Footer = () => {
                             <span>information</span>
                         </p>
                         <p className="footer-item-info">
-                            <NavLink to='/'>About Us</NavLink>
-                            <NavLink to='/'>My Account</NavLink>
-                            <NavLink to='/'>FAQ</NavLink>
-                            <NavLink to='/'>GitHub</NavLink>
+                            <NavLink to='/AboutUs'>About Us</NavLink>
+                            <NavLink to='/UserPage'>My Account</NavLink>
+                            <NavLink to='/FAQ'>FAQ</NavLink>
+                            <a href='https://github.com/DmitriyKulikovskiy/MyBookStore'>GitHub</a>
                         </p>
                     </div>
                 </div>

@@ -32,17 +32,18 @@ const checkOutReducer = (state = initialState, action) => {
 
         case MAKE_ORDER:
             let newOrder = {
-                firstName: action.name,
+                firstName: action.firstName,
                 lastName: action.lastName,
                 phone: action.phone,
                 city: action.city,
                 delivery: action.delivery,
                 payment: action.payment,
                 address: action.address,
-                houseNumber: action.house,
+                houseNumber: action.houseNumber,
                 apartmentNumber: action.apartmentNumber,
                 totalPrice: action.totalPrice,
                 purchases: action.purchases,
+                priceDelivery: action.priceDelivery,
             };
 
             return {
@@ -71,7 +72,8 @@ export const makeAnOrder = (
     houseNumber,
     apartmentNumber,
     totalPrice,
-    purchases
+    purchases,
+    priceDelivery
 ) => ({
     type: "MAKE_ORDER",
     firstName,
@@ -85,6 +87,7 @@ export const makeAnOrder = (
     apartmentNumber,
     totalPrice,
     purchases,
+    priceDelivery
 });
 
 export default checkOutReducer;

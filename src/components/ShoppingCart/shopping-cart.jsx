@@ -1,6 +1,6 @@
 import React from "react";
 import "./shp-crt.sass";
-import { NavLink } from "react-router-dom";
+import { NavLink, Redirect } from "react-router-dom";
 import ShoppingCartPhone from "./shp-phone";
 
 const ShoppingCart = ({ shoppingCart, removeBookFromShoppingCart }) => {
@@ -11,6 +11,7 @@ const ShoppingCart = ({ shoppingCart, removeBookFromShoppingCart }) => {
             return acc;
         }, {})
     );
+
 
     return (
         <>

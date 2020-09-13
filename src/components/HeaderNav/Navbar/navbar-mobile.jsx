@@ -37,18 +37,13 @@ function NavbarMobile() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink className="menu__item" to="/MyCart">
-                        My Cart
+                    <NavLink className="menu__item" to="/Latest News">
+                        Latest News
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink className="menu__item" to="/MyAccount">
-                        My Account
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink className="menu__item" to="/Recommended">
-                        Recommended
+                    <NavLink className="menu__item" to="/FAQ">
+                        FAQ
                     </NavLink>
                 </li>
                 <li className='nav_desc'>

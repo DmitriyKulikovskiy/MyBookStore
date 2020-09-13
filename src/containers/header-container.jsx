@@ -17,8 +17,8 @@ class HeaderNavContainer extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        userEmail: state.homeReducer.userEmail,
-        isAuth: state.homeReducer.isAuth,
+        userEmail: state.authReducer.userEmail,
+        isAuth: state.authReducer.isAuth,
         searchQuery: state.homeReducer.searchQuery,
         booksData: state.homeReducer.booksData
     }

@@ -19,7 +19,7 @@ const SEARCH_BOOK = "SEARCH_BOOK";
 const CLEAR_RESULT = "CLEAR_RESULT";
 const CLEAR_SHOPPING_CART = "CLEAR_SHOPPING_CART"
 
-const initialState = {
+const initialState = { 
     booksData: booksData,
     newsData: newsData,
     wishList: [],

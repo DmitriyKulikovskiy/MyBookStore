@@ -58,12 +58,16 @@ const Header = ({
                 </div>
                 <div className="menu-right">
                     <div className="user">
-                        <i
-                            className="fa fa-user"
-                            aria-hidden="true"
-                            title="My Account"
-                        ></i>
-                        <span className="user-email">{userEmail}</span>
+                        <NavLink to="/UserPage">
+                            <i
+                                className="fa fa-user"
+                                aria-hidden="true"
+                                title="My Account"
+                            ></i>
+                        </NavLink>
+                        {userEmail !== null || "" ? (
+                            <span className="user-email">{userEmail}</span>
+                        ) : null}
                     </div>
                     <div className="wishlist-icon-box">
                         <NavLink to="/WishList">
@@ -83,9 +87,17 @@ const Header = ({
                             ></i>
                         </NavLink>
                     </div>
-                    <div className="logout">
-                        <button onClick={logOut}>LogOut</button>
-                    </div>
+                    {userEmail === null ? (
+                        <div className="logout">
+                            <NavLink to="/LoginPage">
+                                <button>LogIn</button>
+                            </NavLink>
+                        </div>
+                    ) : (
+                        <div className="logout">
+                            <button onClick={logOut}>LogOut</button>
+                        </div>
+                    )}
                 </div>
                 <NavbarMobile />
             </div>

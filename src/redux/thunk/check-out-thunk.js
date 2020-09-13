@@ -12,7 +12,8 @@ export const makeOrder = (
     houseNumber,
     apartmentNumber,
     totalPrice,
-    purchases
+    purchases,
+    priceDelivery
 ) => (dispatch) => {
     dispatch(
         makeAnOrder(
@@ -26,7 +27,8 @@ export const makeOrder = (
             houseNumber,
             apartmentNumber,
             totalPrice,
-            purchases
+            purchases,
+            priceDelivery
         )
     );
     dispatch(clearShoppingCart());

@@ -14,65 +14,107 @@ import WishlistContainer from "./containers/wishlist-container";
 import CheckOutContainer from "./containers/check-out-container";
 import { changeDiscountStatus } from "./redux/checkOut-reducer";
 import GetDiscount from "./components/HomePage/HomeModalScreens/get-discount";
+import UserPageContainer from "./containers/user-page-container";
+import NewsContainer from "./containers/news-container";
+import CurrentNewsContainer from "./containers/current-news-container";
+import ContactUs from "./components/ContacUs/contact-us";
+import { addSupportReview, changeStatusFAQ } from "./redux/other-reducer";
+import AboutUs from "./components/AboutUs/about-us";
+import SaleComponent from "./components/Sale/sale";
+import FAQ from "./components/FAQ/faq";
 
 const App = ({
-    isAuth,
     statusCartModal,
     cartModalBook,
     shoppingCart,
     changeStatusCartModal,
     discountStatus,
     changeDiscountStatus,
+    addSupportReview,
+    supportReview,
+    changeStatusFAQ,
+    faq,
 }) => {
-    // const verifyIsAuth = isAuth === true
 
     return (
         <div className="App">
-            {/* <Route path='/LoginPage' render={() => <LoginContainer/>} /> */}
-            {statusCartModal === true ? (
-                <AddedToCart
-                    cartModalBook={cartModalBook}
-                    shoppingCart={shoppingCart}
-                    changeStatusCartModal={changeStatusCartModal}
-                />
-            ) : null}
-            {discountStatus === true ? (
-                <GetDiscount changeDiscountStatus={changeDiscountStatus} />
-            ) : null}
+            <Route path={['/', '/LoginPage']} exact render={() => <LoginContainer />} />
 
-            <HeaderNavContainer />
-            <Route
-                path="/ShoppingCart"
-                render={() => <ShoppingCartContainer />}
-            />
-            <Route
-                path="/ProceedToCheckOut"
-                render={() => <CheckOutContainer />}
-            />
-            <Route path="/WishList" render={() => <WishlistContainer />} />
-            <Route path="/Home" render={() => <HomeContainer />} />
-            <Route
-                path="/Book/:id"
-                render={({ match }) => <SelectedBookContainer match={match} />}
-            />
-            <Route path="/Books" render={() => <BookPageContainer />} />
-            <Footer />
+            <>
+                {statusCartModal === true ? (
+                    <AddedToCart
+                        cartModalBook={cartModalBook}
+                        shoppingCart={shoppingCart}
+                        changeStatusCartModal={changeStatusCartModal}
+                    />
+                ) : null}
+                {discountStatus === true ? (
+                    <GetDiscount changeDiscountStatus={changeDiscountStatus} />
+                ) : null}
+                <HeaderNavContainer />
+                <Route
+                    path="/ShoppingCart"
+                    render={() => <ShoppingCartContainer />}
+                />
+                <Route path="/UserPage" render={() => <UserPageContainer />} />
+                <Route
+                    path="/ProceedToCheckOut"
+                    render={() => <CheckOutContainer />}
+                />
+                <Route path="/WishList" render={() => <WishlistContainer />} />
+                <Route path="/Home" render={() => <HomeContainer />} />
+                <Route
+                    path="/ContactUs"
+                    render={() => (
+                        <ContactUs
+                            addSupportReview={addSupportReview}
+                            supportReview={supportReview}
+                        />
+                    )}
+                />
+                <Route path="/AllNews" render={() => <NewsContainer />} />
+                <Route path="/AboutUs" render={() => <AboutUs />} />
+                <Route path="/Sale" render={() => <SaleComponent />} />
+                <Route
+                    path="/FAQ"
+                    render={() => (
+                        <FAQ changeStatusFAQ={changeStatusFAQ} faq={faq} />
+                    )}
+                />
+                <Route
+                    path="/Book/:id"
+                    render={({ match }) => (
+                        <SelectedBookContainer match={match} />
+                    )}
+                />
+                <Route
+                    path="/CurrentNews/:id"
+                    render={({ match }) => (
+                        <CurrentNewsContainer match={match} />
+                    )}
+                />
+                <Route path="/Books" render={() => <BookPageContainer />} />
+                <Footer />
+            </>
         </div>
     );
 };
 
 //get data
 const mapStateToProps = (state) => ({
-    isAuth: state.authReducer.isAuth,
     statusCartModal: state.homeReducer.statusCartModal,
     cartModalBook: state.homeReducer.cartModalBook,
     shoppingCart: state.homeReducer.shoppingCart,
     discountStatus: state.checkOutReducer.discountStatus,
+    supportReview: state.otherReducer.supportReview,
+    faq: state.otherReducer.faq,
 });
 
 const AppContainer = connect(mapStateToProps, {
     changeStatusCartModal,
     changeDiscountStatus,
+    addSupportReview,
+    changeStatusFAQ,
 })(App);
 
 export default AppContainer;

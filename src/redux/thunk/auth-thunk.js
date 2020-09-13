@@ -8,6 +8,7 @@ import {
 import { fire } from "../../firebase/config";
 
 export const loginInWithEmail = (email, password) => (dispatch) => {
+
     dispatch(loadingAuth(true));
     fire.auth()
         .signInWithEmailAndPassword(email, password)
@@ -16,6 +17,7 @@ export const loginInWithEmail = (email, password) => (dispatch) => {
         })
         .then(() => dispatch(setIsAuth(true)))
         .then(() => dispatch(loadingAuth(false)));
+
 };
 
 export const authListener = (isRemembered) => (dispatch) => {

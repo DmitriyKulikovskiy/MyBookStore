@@ -1,0 +1,84 @@
+@import '../../assets/style-mixins.sass'
+@import '../../assets/mixins.sass'
+    
+.contact-us-container
+    margin-top: 40px
+    .title
+        text-align: center
+        font-size: 30px
+        font-weight: bold
+        margin-bottom: 12px
+        +tablet() 
+            font-size: 25px
+        +landscape-phone() 
+            font-size: 22px
+        +portrait-phone() 
+            font-size: 20px
+    form     
+        padding: 50px 200px
+        border-radius: 10px 10px 10px 10px
+        box-shadow: 0 0px 24px rgba(0,0,0,0.1)
+        +tablet() 
+            padding: 50px 150px
+        +landscape-phone() 
+            padding: 35px 100px
+        +portrait-phone() 
+            padding: 15px 10px
+        input 
+            border: none
+            border-bottom: 1px solid #747272
+            &::-webkit-input-placeholder 
+                font-size: 18px
+                +landscape-phone() 
+                    font-size: 14px
+                +portrait-phone() 
+                    font-size: 14px
+
+        textarea 
+            border: none
+            border-bottom: 1px solid #747272
+            color: #747272
+            
+        label
+            font-size: 18px
+            color: #747272
+            +landscape-phone() 
+                font-size: 14px
+            +portrait-phone() 
+                font-size: 14px
+        .button-box
+            text-align: center
+            button 
+                +button()
+                    color: $activeMain
+                    border: 1px solid $activeMain
+                    padding: 5px 40px
+                    margin-top: 12px
+                    +portrait-phone() 
+                        font-size: 14px
+                        padding: 2px 35px
+                    &:hover
+                        color: $activeMain
+
+.submitDone 
+    position: relative
+    border: 1px solid #3be043
+    background: #3be0431a
+    padding: 6px 10px
+    color: #0e9115
+    width: 100%
+    text-align: center
+    margin: 10px 0
+    +portrait-phone()
+        padding: 6px 18px
+    span 
+        font-size: 18px
+        +portrait-phone()
+            font-size: 14px
+    i 
+
+        padding: 5px 0
+        font-size: 18px
+        cursor: pointer
+        float: right
+

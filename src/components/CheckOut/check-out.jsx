@@ -100,10 +100,12 @@ const CheckOut = ({
                 house,
                 apartment,
                 promoSum(totalSum).toFixed(2),
-                grouped
+                grouped,
+                deliverPrice()
             );
         }
     };
+
 
     return (
         <>

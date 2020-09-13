@@ -92,16 +92,20 @@
                     font-size: 25px
         form  
             .form-group
-                margin-top: 20px
+                margin: 0
                 input 
                     border: 1px solid #000
             .remember-me
+                display: flex
+                justify-content: center
+                align-items: center
                 input 
                     width: 20px
                     height: 20px
                     cursor: pointer
-                .remember-me-title
-                    
+                    margin: 0 5px 0 0
+                label 
+                    text-transform: none
             .button-logIn
                 button 
                     +button()
