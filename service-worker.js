@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/DmitriyKulikovskiy/MyBookStore/precache-manifest.819cd842eb78b3b0ecd1bc67a42a31ba.js"
+  "/DmitriyKulikovskiy/MyBookStore/precache-manifest.7447d13c18333f3cfaea76876cdf6cb2.js"
 );
 
 self.addEventListener('message', (event) => {

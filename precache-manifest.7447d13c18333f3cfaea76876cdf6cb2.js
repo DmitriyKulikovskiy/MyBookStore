@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d1315477019e7fc9300345747bde4a47",
+    "revision": "9c66b10513cb32a2d2edc5f24e1df555",
     "url": "/DmitriyKulikovskiy/MyBookStore/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DmitriyKulikovskiy/MyBookStore/static/css/2.8958c31c.chunk.css"
   },
   {
-    "revision": "3acdec9f2a708d9fec4f",
+    "revision": "5faac2a6cf7a91a8bd90",
     "url": "/DmitriyKulikovskiy/MyBookStore/static/css/main.11a5de68.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DmitriyKulikovskiy/MyBookStore/static/js/2.1f0c86de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3acdec9f2a708d9fec4f",
-    "url": "/DmitriyKulikovskiy/MyBookStore/static/js/main.3b18758e.chunk.js"
+    "revision": "5faac2a6cf7a91a8bd90",
+    "url": "/DmitriyKulikovskiy/MyBookStore/static/js/main.349c4a4f.chunk.js"
   },
   {
     "revision": "fb36860a61a4611c3600",

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DmitriyKulikovskiy/MyBookStore/static/css/main.11a5de68.chunk.css",
-    "main.js": "/DmitriyKulikovskiy/MyBookStore/static/js/main.3b18758e.chunk.js",
-    "main.js.map": "/DmitriyKulikovskiy/MyBookStore/static/js/main.3b18758e.chunk.js.map",
+    "main.js": "/DmitriyKulikovskiy/MyBookStore/static/js/main.349c4a4f.chunk.js",
+    "main.js.map": "/DmitriyKulikovskiy/MyBookStore/static/js/main.349c4a4f.chunk.js.map",
     "runtime-main.js": "/DmitriyKulikovskiy/MyBookStore/static/js/runtime-main.65d21905.js",
     "runtime-main.js.map": "/DmitriyKulikovskiy/MyBookStore/static/js/runtime-main.65d21905.js.map",
     "static/css/2.8958c31c.chunk.css": "/DmitriyKulikovskiy/MyBookStore/static/css/2.8958c31c.chunk.css",
     "static/js/2.1f0c86de.chunk.js": "/DmitriyKulikovskiy/MyBookStore/static/js/2.1f0c86de.chunk.js",
     "static/js/2.1f0c86de.chunk.js.map": "/DmitriyKulikovskiy/MyBookStore/static/js/2.1f0c86de.chunk.js.map",
     "index.html": "/DmitriyKulikovskiy/MyBookStore/index.html",
-    "precache-manifest.819cd842eb78b3b0ecd1bc67a42a31ba.js": "/DmitriyKulikovskiy/MyBookStore/precache-manifest.819cd842eb78b3b0ecd1bc67a42a31ba.js",
+    "precache-manifest.7447d13c18333f3cfaea76876cdf6cb2.js": "/DmitriyKulikovskiy/MyBookStore/precache-manifest.7447d13c18333f3cfaea76876cdf6cb2.js",
     "service-worker.js": "/DmitriyKulikovskiy/MyBookStore/service-worker.js",
     "static/css/2.8958c31c.chunk.css.map": "/DmitriyKulikovskiy/MyBookStore/static/css/2.8958c31c.chunk.css.map",
     "static/css/main.11a5de68.chunk.css.map": "/DmitriyKulikovskiy/MyBookStore/static/css/main.11a5de68.chunk.css.map",
@@ -42,6 +42,6 @@
     "static/css/2.8958c31c.chunk.css",
     "static/js/2.1f0c86de.chunk.js",
     "static/css/main.11a5de68.chunk.css",
-    "static/js/main.3b18758e.chunk.js"
+    "static/js/main.349c4a4f.chunk.js"
   ]
 }
