@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/MyBookStore/static/css/main.eec56198.chunk.css",
-    "main.js": "/MyBookStore/static/js/main.9f74ffff.chunk.js",
-    "main.js.map": "/MyBookStore/static/js/main.9f74ffff.chunk.js.map",
+    "main.css": "/MyBookStore/static/css/main.88a14d43.chunk.css",
+    "main.js": "/MyBookStore/static/js/main.9efb0349.chunk.js",
+    "main.js.map": "/MyBookStore/static/js/main.9efb0349.chunk.js.map",
     "runtime-main.js": "/MyBookStore/static/js/runtime-main.eaa7010f.js",
     "runtime-main.js.map": "/MyBookStore/static/js/runtime-main.eaa7010f.js.map",
     "static/css/2.4fc1ec3d.chunk.css": "/MyBookStore/static/css/2.4fc1ec3d.chunk.css",
-    "static/js/2.6fbeb081.chunk.js": "/MyBookStore/static/js/2.6fbeb081.chunk.js",
-    "static/js/2.6fbeb081.chunk.js.map": "/MyBookStore/static/js/2.6fbeb081.chunk.js.map",
+    "static/js/2.943a9fe9.chunk.js": "/MyBookStore/static/js/2.943a9fe9.chunk.js",
+    "static/js/2.943a9fe9.chunk.js.map": "/MyBookStore/static/js/2.943a9fe9.chunk.js.map",
     "index.html": "/MyBookStore/index.html",
-    "precache-manifest.dd6f4d4a0913894d28d1903d1ef71816.js": "/MyBookStore/precache-manifest.dd6f4d4a0913894d28d1903d1ef71816.js",
+    "precache-manifest.70101fdea37742e4c363e2bf674b88bb.js": "/MyBookStore/precache-manifest.70101fdea37742e4c363e2bf674b88bb.js",
     "service-worker.js": "/MyBookStore/service-worker.js",
     "static/css/2.4fc1ec3d.chunk.css.map": "/MyBookStore/static/css/2.4fc1ec3d.chunk.css.map",
-    "static/css/main.eec56198.chunk.css.map": "/MyBookStore/static/css/main.eec56198.chunk.css.map",
-    "static/js/2.6fbeb081.chunk.js.LICENSE.txt": "/MyBookStore/static/js/2.6fbeb081.chunk.js.LICENSE.txt",
+    "static/css/main.88a14d43.chunk.css.map": "/MyBookStore/static/css/main.88a14d43.chunk.css.map",
+    "static/js/2.943a9fe9.chunk.js.LICENSE.txt": "/MyBookStore/static/js/2.943a9fe9.chunk.js.LICENSE.txt",
     "static/media/1.webp": "/MyBookStore/static/media/1.eea89bf9.webp",
     "static/media/2.webp": "/MyBookStore/static/media/2.a3810f98.webp",
     "static/media/3.jpg": "/MyBookStore/static/media/3.0ed089f3.jpg",
@@ -40,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.eaa7010f.js",
     "static/css/2.4fc1ec3d.chunk.css",
-    "static/js/2.6fbeb081.chunk.js",
-    "static/css/main.eec56198.chunk.css",
-    "static/js/main.9f74ffff.chunk.js"
+    "static/js/2.943a9fe9.chunk.js",
+    "static/css/main.88a14d43.chunk.css",
+    "static/js/main.9efb0349.chunk.js"
   ]
 }
