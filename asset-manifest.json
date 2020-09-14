@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/MyBookStore/static/css/main.88a14d43.chunk.css",
-    "main.js": "/MyBookStore/static/js/main.9efb0349.chunk.js",
-    "main.js.map": "/MyBookStore/static/js/main.9efb0349.chunk.js.map",
+    "main.css": "/MyBookStore/static/css/main.5ab68a3f.chunk.css",
+    "main.js": "/MyBookStore/static/js/main.6dbe8212.chunk.js",
+    "main.js.map": "/MyBookStore/static/js/main.6dbe8212.chunk.js.map",
     "runtime-main.js": "/MyBookStore/static/js/runtime-main.eaa7010f.js",
     "runtime-main.js.map": "/MyBookStore/static/js/runtime-main.eaa7010f.js.map",
     "static/css/2.4fc1ec3d.chunk.css": "/MyBookStore/static/css/2.4fc1ec3d.chunk.css",
     "static/js/2.943a9fe9.chunk.js": "/MyBookStore/static/js/2.943a9fe9.chunk.js",
     "static/js/2.943a9fe9.chunk.js.map": "/MyBookStore/static/js/2.943a9fe9.chunk.js.map",
     "index.html": "/MyBookStore/index.html",
-    "precache-manifest.70101fdea37742e4c363e2bf674b88bb.js": "/MyBookStore/precache-manifest.70101fdea37742e4c363e2bf674b88bb.js",
+    "precache-manifest.c8d2d4cfc3cd96daee10bd720a7821b1.js": "/MyBookStore/precache-manifest.c8d2d4cfc3cd96daee10bd720a7821b1.js",
     "service-worker.js": "/MyBookStore/service-worker.js",
     "static/css/2.4fc1ec3d.chunk.css.map": "/MyBookStore/static/css/2.4fc1ec3d.chunk.css.map",
-    "static/css/main.88a14d43.chunk.css.map": "/MyBookStore/static/css/main.88a14d43.chunk.css.map",
+    "static/css/main.5ab68a3f.chunk.css.map": "/MyBookStore/static/css/main.5ab68a3f.chunk.css.map",
     "static/js/2.943a9fe9.chunk.js.LICENSE.txt": "/MyBookStore/static/js/2.943a9fe9.chunk.js.LICENSE.txt",
     "static/media/1.webp": "/MyBookStore/static/media/1.eea89bf9.webp",
     "static/media/2.webp": "/MyBookStore/static/media/2.a3810f98.webp",
@@ -41,7 +41,7 @@
     "static/js/runtime-main.eaa7010f.js",
     "static/css/2.4fc1ec3d.chunk.css",
     "static/js/2.943a9fe9.chunk.js",
-    "static/css/main.88a14d43.chunk.css",
-    "static/js/main.9efb0349.chunk.js"
+    "static/css/main.5ab68a3f.chunk.css",
+    "static/js/main.6dbe8212.chunk.js"
   ]
 }
